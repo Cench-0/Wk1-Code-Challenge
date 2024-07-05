@@ -14,21 +14,21 @@
     <script>
         function getGrade() {
             const marks = prompt("Enter student marks (0-100): ");
-            const marksInt = parseInt(marks, 10);
+            const themarks = parseInt(marks, 10);
 
-            if (isNaN(marksInt) || marksInt < 0 || marksInt > 100) {
+            if (isNaN(marks) || marks< 0 || marks > 100) {
                 document.getElementById('result').textContent = "Please enter a number between 0 and 100.";
                 return;
             }
 
             let grade;
-            if (marksInt > 79) {
+            if (marks > 79) {
                 grade = "A";
-            } else if (marksInt >= 60) {
+            } else if (marks >= 60) {
                 grade = "B";
-            } else if (marksInt >= 49) {
+            } else if (marks >= 49) {
                 grade = "C";
-            } else if (marksInt >= 40) {
+            } else if (marks >= 40) {
                 grade = "D";
             } else {
                 grade = "E";
