@@ -1,3 +1,5 @@
+
+
 function studentGrade() {
     const marks = prompt("Enter student marks (0-100):");
   
